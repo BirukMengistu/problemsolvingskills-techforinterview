@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+textarea{
+  width:200px ;
+  height:300px;
+}
+.score-result{
+ font-Weight:bold;
+  color:green;
+}
