@@ -1,0 +1,31 @@
+body{
+    margin: none;
+    padding: none;
+    background-color: rgb(227, 242, 242);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.input-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 1.3rem;
+}
+
+.input-box input , .input-box label {
+    box-shadow: 2px solid grey;
+    padding: 0.4rem 0.8rem;
+    
+}
+.container button{
+background-color: aqua;
+padding: 0.5rem 0.8rem;
+border-radius: 10px;
+margin: 1rem;
+}
