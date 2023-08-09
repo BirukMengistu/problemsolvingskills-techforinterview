@@ -11,10 +11,11 @@ const alpVal=(s:string)=>s.toLowerCase().charCodeAt(0)-97 +1
 const high =(x:string) =>{
  let splitWord= x.split(' '), arr:any=[] ,result=0
  
- splitWord.map((val) => {
-             val.split('').map(ch=>  result += alpVal(ch) )
-            arr.push({'value':val, 'score': result})
-            result=0  
+ // eslint-disable-next-line array-callback-return
+ splitWord.map((val):void =>  {
+              val.split('').map(ch=>  result += alpVal(ch) )
+              arr.push({'value':val, 'score': result})
+             result=0  
         })  
   
   
@@ -39,17 +40,18 @@ let highValue = arr.filter((val:curObj) => val.score === max)
         <h1>Solution for Highest scoring word from the given text</h1>
        <div className='input-box'>
           <label>Enter text</label>
-           <textarea style={{width:'200px', height:'300px'}} placeholder='Enter given string'
+           <textarea  placeholder='Enter given string'
             onChange={(e)=>setInput(e.target.value)}/>
        </div>
 
        <button onClick={()=>handleTask(input)}>
            Calculate
        </button>
-        <p>The higest scoring word from give text - <span
-        style={{fontWeight:'bold' , color:'green' }}>
+        <p>The higest scoring word from give text - 
+            <span
+             className='score-result'>
             {result?.value}</span> and frequecy
-            <span style={{fontWeight:'bold' , color:'green' }}> 
+            <span className='score-result'> 
             {result?.score}  
             </span>
             </p>
