@@ -11,10 +11,11 @@ const alpVal=(s:string)=>s.toLowerCase().charCodeAt(0)-97 +1
 const high =(x:string) =>{
  let splitWord= x.split(' '), arr:any=[] ,result=0
  
- splitWord.map((val) =>  {
-             val.split('').map(ch=>  result += alpVal(ch) )
-            arr.push({'value':val, 'score': result})
-            result=0  
+ // eslint-disable-next-line array-callback-return
+ splitWord.map((val):void =>  {
+              val.split('').map(ch=>  result += alpVal(ch) )
+              arr.push({'value':val, 'score': result})
+             result=0  
         })  
   
   
