@@ -1,83 +1,20 @@
-.App {
-  text-align: center;
-  display: grid;
- 
-  grid-template-columns: 16rem 1fr 16rem;
-  grid-template-rows:  auto 1fr auto ;
-  grid-template-areas: 
-   "header header header"
-   "nav main sidebar"
-   "footer footer footer";
-   min-height: 100vh;
-  }
-header{
-  grid-area: header;
-  background-color: #61dafb;
-  padding: 2rem;
-}
-nav{
-  grid-area: nav;
-  background-color: #61dafb;
-}
-main{
-  
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  text-align: center;
- 
-}
 
 
-sidebar{
-  
-  grid-area: sidebar;
-  
-}
-footer{
-  grid-area: footer;
-  background-color: #61dafb;
-  padding: 2rem;
+.main-area .listoftask {
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid rgb(118, 237, 142);
+  padding: 1rem 1rem;
+ text-align: left;
 }
 
-.listoftask {
-  text-align: left;
-  border-left: 4px solid rgb(85, 130, 237);
-  padding: 1rem 0.4rem;
-  height: auto;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-area .listoftask a{
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-area .listoftask a:hover{
+ font-weight: bold;
+ transition: ease 1;
+ color: rgb(175, 237, 175);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
