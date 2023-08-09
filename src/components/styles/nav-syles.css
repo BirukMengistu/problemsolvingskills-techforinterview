@@ -1,0 +1,9 @@
+.side-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-nav ul{
+    list-style: none;
+}

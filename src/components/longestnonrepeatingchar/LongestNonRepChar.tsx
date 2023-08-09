@@ -23,7 +23,7 @@ const lengthOfLongestSubstring=(s:string)=> {
     }
   return (
     <div className='container'> 
-        <h1>Solution for Longest non repeating Char</h1>
+        <h3>Solution for Longest non repeating Char</h3>
        <div className='input-box'>
           <label>Enter given string</label>
            <input placeholder='Enter given string'

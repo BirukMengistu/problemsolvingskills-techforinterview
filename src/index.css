@@ -14,10 +14,44 @@ code {
 
 textarea{
   width:200px ;
-  height:300px;
+  height:200px;
 }
 .score-result{
  font-Weight:bold;
-  color:green;
+color:green;
+}
+
+.App {
+  display: grid;
+  grid-template-areas: 
+   "header header header"
+   "nav main sidebar"
+   "footer footer footer";
+  }
+header{
+  grid-area: header;
+  background-color: #61dafb;
+  text-align: center;
+  height: 3rem;
+  padding: 1rem;
+}
+.nav-area{
+  grid-area: nav;
+  background-color: #e3edef;
+}
+.main-area{
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.sidebar-area{
+  grid-area: sidebar; 
+}
+.footer-area{
+  grid-area: footer;
+  background-color: #61dafb;
+  padding: 2rem;
 }
 

@@ -9,27 +9,32 @@ import  LongestNonRepChar from './components/longestnonrepeatingchar/LongestNonR
 import './App.css';
 import HigestScoring from './components/highest-scoring-word/higestscoring';
 import StringIncermenter from './components/stringIncerment/StringIncermenter';
+import Header from './components/header/Header';
+import SideNav from './components/header/Nav';
 
  const Home=()=>{
   return(
-    <>
-     <h3>welcome to Birdev</h3>
-     <h5>use route to check result </h5>
+ 
+    <div className='main-area'>
+    <h3>HackerRank and Codeware </h3>
      <div className='listoftask'>
-        <p><Link to='/lengthofLongestSubstring'> 1. /lengthofLongestSubstring</Link></p>
-        <p><Link to ='/higestsoringword'> 2. /higestsoringword</Link></p>
-        <p><Link to ='/incermentstring'> 3./incermentstring</Link></p>
+        <p><Link to='/lengthofLongestSubstring'> 1. Length Sub string</Link></p>
+        <p><Link to ='/higestsoringword'> 2. Higest socring word from the given text</Link></p>
+        <p><Link to ='/incermentstring'> 3 Incerment digit from the given string</Link></p>
      </div>
+    </div>
+   
      
 
-  </>
+ 
   )
  
 }
 function App() {
   return (
-     <> 
-       <header></header>
+     <div className='App'> 
+       <Header/>
+       <nav><SideNav/></nav>
        <main>
       <BrowserRouter> 
           <Routes>
@@ -38,14 +43,11 @@ function App() {
           <Route path="/higestsoringword" element= {<HigestScoring />} />
           <Route path="/incermentstring" element= {<StringIncermenter />} />
         </Routes>
-
-        </BrowserRouter>
+      </BrowserRouter>
     </main>
-      
-    
    
-    <footer/>
-     </>
+    <footer></footer>
+     </div>
     
     
   );
