@@ -11,6 +11,8 @@ import HigestScoring from './components/highest-scoring-word/higestscoring';
 import StringIncermenter from './components/stringIncerment/StringIncermenter';
 import Header from './components/header/Header';
 import SideNav from './components/header/Nav';
+import TreeStrcureRender from './components/tree-structure-render/TreeStrcureRender';
+import Sidebar from './components/header/sidebar';
 
  const Home=()=>{
   return(
@@ -21,6 +23,7 @@ import SideNav from './components/header/Nav';
         <p><Link to='/lengthofLongestSubstring'> 1. Length Sub string</Link></p>
         <p><Link to ='/higestsoringword'> 2. Higest socring word from the given text</Link></p>
         <p><Link to ='/incermentstring'> 3 Incerment digit from the given string</Link></p>
+        <p><Link to ='/treestructure'> 4 Tree structure rendering</Link></p>
      </div>
     </div>
    
@@ -42,9 +45,11 @@ function App() {
           <Route path="/lengthofLongestSubstring" element= {<LongestNonRepChar />} />
           <Route path="/higestsoringword" element= {<HigestScoring />} />
           <Route path="/incermentstring" element= {<StringIncermenter />} />
+          <Route path="/treestructure" element= {<TreeStrcureRender />} />
         </Routes>
       </BrowserRouter>
     </main>
+     <aside><Sidebar/></aside>
    
     <footer></footer>
      </div>

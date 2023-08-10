@@ -6,9 +6,10 @@ const SideNav = () => {
     <div className='nav-area'>
       <div className='side-nav'>
         <ul>
-            <li>Services</li>
-            <li>Services</li>
-            <li>Services</li>
+            <li> <a href='/'>Home </a></li>
+            <li> <a href='/blog'>blog</a></li>
+            <li> <a href='/FAQ'>FAQ</a></li>
+
         </ul>
       </div>
     </div>
