@@ -12,6 +12,7 @@ import StringIncermenter from './components/stringIncerment/StringIncermenter';
 import Header from './components/header/Header';
 import SideNav from './components/header/Nav';
 import TreeStrcureRender from './components/tree-structure-render/TreeStrcureRender';
+import Sidebar from './components/header/sidebar';
 
  const Home=()=>{
   return(
@@ -48,6 +49,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </main>
+     <aside><Sidebar/></aside>
    
     <footer></footer>
      </div>

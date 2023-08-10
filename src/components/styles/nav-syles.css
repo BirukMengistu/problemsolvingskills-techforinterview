@@ -4,6 +4,27 @@
     align-items: center;
 }
 
-.side-nav ul{
+.side-nav li, .side-nav a{
     list-style: none;
+    text-decoration-line: none;
+    padding: .41rem 0;
+}
+.side-nav a:hover{
+    color:rgb(21, 161, 212);
+    font-weight: bolder;
+}
+
+.sidebar-card{
+    margin-top: 2rem;
+    border: 1px solid rgb(195, 250, 255);
+    text-align: center;
+    border-radius:10px ;
+}
+
+.sidebar-card p:hover{
+    margin-bottom: 0;
+    border-radius:10px ;
+    font-size: 1.3rem;
+   background-color: rgb(212, 205, 205);
+   color: rgb(97, 192, 237);
 }
