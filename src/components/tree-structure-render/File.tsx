@@ -18,7 +18,7 @@ export const Files ={
            
         },
         {name:'Public',
-        type:'folder',
+         type:'folder',
         childern:[
             {name:'package.json',
              type:'file' }]},

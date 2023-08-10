@@ -37,7 +37,7 @@ header{
 }
 .nav-area{
   grid-area: nav;
-  background-color: #e3edef;
+  
 }
 .main-area{
   grid-area: main;
