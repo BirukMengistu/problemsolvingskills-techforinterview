@@ -12,21 +12,22 @@ const Citiesbasedcountry = () => {
   return (
     <div className="content-box">
               {/* select option for Country */}
-              <select value={country} onChange={(e)=>setCountry(e.target.value)}>
+              <select defaultValue={''} value={country} onChange={(e)=>setCountry(e.target.value)}>
                 { Counries?.map( value => 
                             <option >
                                 {value.name}
                             </option>)
                          }
-                 </select>
-                 {/* select option for city */}
+                  </select> 
+                {(city.length > 0) && 
                  <select >
                  { city[0]?.map((temp: string | number | boolean ) =>
                             <option >
                                 {temp}
                             </option>)
                          } 
-                 </select>
+                 </select> 
+                 }
                         
     </div>
   )
