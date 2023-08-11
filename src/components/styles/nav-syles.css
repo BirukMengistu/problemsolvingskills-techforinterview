@@ -1,4 +1,4 @@
-.side-nav{
+.side-nav {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -6,6 +6,20 @@
     border: 1px solid rgb(195, 250, 255);
 }
 
+.content-box{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem 0.4rem;
+    margin-top: 2rem;
+    border: 1px solid rgb(195, 250, 255);
+}
+
+.content-box select{
+    margin: .83rem;
+}
 .side-nav li, .side-nav a{
     list-style: none;
     text-decoration-line: none;

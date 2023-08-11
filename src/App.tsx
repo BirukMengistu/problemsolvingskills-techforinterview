@@ -13,6 +13,7 @@ import Header from './components/header/Header';
 import SideNav from './components/header/Nav';
 import TreeStrcureRender from './components/tree-structure-render/TreeStrcureRender';
 import Sidebar from './components/header/sidebar';
+import Citiesbasedcountry from './components/select-city-based-country/Citiesbasedcountry';
 
  const Home=()=>{
   return(
@@ -22,8 +23,10 @@ import Sidebar from './components/header/sidebar';
      <div className='listoftask'>
         <p><Link to='/lengthofLongestSubstring'> 1. Length Sub string</Link></p>
         <p><Link to ='/higestsoringword'> 2. Higest socring word from the given text</Link></p>
-        <p><Link to ='/incermentstring'> 3 Incerment digit from the given string</Link></p>
-        <p><Link to ='/treestructure'> 4 Tree structure rendering</Link></p>
+        <p><Link to ='/incermentstring'> 3. Incerment digit from the given string</Link></p>
+        <p><Link to ='/treestructure'> 4. Tree structure rendering</Link></p>
+        <p><Link to ='/cityandcountry'> 5. Cities based on country</Link></p>
+        
      </div>
     </div>
    
@@ -46,6 +49,7 @@ function App() {
           <Route path="/higestsoringword" element= {<HigestScoring />} />
           <Route path="/incermentstring" element= {<StringIncermenter />} />
           <Route path="/treestructure" element= {<TreeStrcureRender />} />
+          <Route path="/cityandcountry" element= {<Citiesbasedcountry />} />
         </Routes>
       </BrowserRouter>
     </main>
